@@ -1,38 +1,94 @@
 # The_Outliers
 
-#### Movement of Single Bot (Movement_single.ipynb) 
+**Hackathon Project: DoseHack**
 
-This project implements the A* algorithm to determine the shortest path for a single bot moving from a given source to a destination within a grid. The bot's movement is tracked and displayed step by step with directional commands.
+This repository showcases our solution for efficient and intelligent pathfinding for single and multiple autonomous bots using both classical and reinforcement learning methods.
 
-##### Key Features:
-- The bot starts by facing upward.
-   - Movements are printed in a sequence of actions such as:
-      - Forward: Move in the current direction.
-      - Left: Rotate 90° counterclockwise.
-      - Right: Rotate 90° clockwise.
-When moving in a different direction (e.g., from facing upward to moving right), the bot first changes its direction (via left or right turns) and then proceeds forward.
-By applying the A* algorithm, the bot calculates the optimal path considering obstacles and efficiently reaches its destination.
+---
 
+## 📌 Project Modules
 
-#### Coordinated Movement of Dual Bots (dual_bots.ipynb)
+### 🚶‍♂️ Movement of Single Bot – `Movement_single.ipynb`
 
-This notebook implements the A* algorithm for navigating two bots from their respective sources to destinations. In case both bots encounter a potential collision, one bot will wait while the other proceeds, ensuring safe and efficient movement for both.
+This module implements the **A\*** algorithm to determine the shortest path for a single bot moving from a given source to a destination on a grid.
 
+- The bot starts facing **upward**.
+- Movement instructions include:
+  - **Forward**: Move in the current direction.
+  - **Left**: Rotate 90° counterclockwise.
+  - **Right**: Rotate 90° clockwise.
+- When a direction change is required, the bot first rotates appropriately before moving forward.
+- The A\* algorithm calculates the optimal path while avoiding obstacles, ensuring an efficient route to the destination.
 
-#### GUI display of two bots (gui_dual.ipynb)
+---
 
-This notebook implements the visualization of A* algorithm for navigating two bots using a grid matrix with tkinter
+### 🤖 Coordinated Movement of Dual Bots – `dual_bots.ipynb`
 
+This notebook implements the **A\*** algorithm to coordinate movement between **two bots** from their respective sources to destinations.
 
-#### Used Q-Learning Approach for Multi Bots (q_learning_bot.ipynb)
+- Collision avoidance is handled by allowing one bot to **wait** if a collision is predicted, ensuring safe and efficient parallel movement.
 
-This notebook implements Q-Learning for receiving dynamic number of bots from respective user along with exploring possible solutions and gives faster response by finding the firsst approach to destination and stopping there saving both time and resources.
+---
 
+### 🖼️ GUI Display of Dual Bots – `gui_dual.ipynb`
 
-#### Final Code (q_learning.ipynb)
+A Tkinter-based GUI visualization of the dual bot A\* algorithm.
 
-We implemented our Q-Learning algorithm and optimize our outputs in this file.
-It includes outputs including
-- Time Taken
-- Average Steps
-- Each Bot's individual steps
+- Offers a visual interface for tracking the real-time pathfinding and movements of the bots on a grid.
+
+---
+
+### 🧠 Q-Learning for Multi-Bots – `q_learning_bot.ipynb`
+
+This module applies **Q-Learning** for pathfinding involving a **dynamic number of bots**:
+
+- Users can input the number of bots dynamically.
+- Each bot finds its own path toward its destination using reinforcement learning.
+- The process stops as soon as the first successful path is found, saving both **time** and **resources**.
+
+---
+
+### 🏁 Final Optimized Q-Learning Model – `q_learning.ipynb`
+
+This notebook contains our **final implementation** of the Q-Learning approach with optimized performance metrics.
+
+- Output includes:
+  - ⏱️ **Time Taken**
+  - 📊 **Average Steps**
+  - 👣 **Each Bot's Individual Steps**
+
+---
+
+## 🚀 Tech Stack
+
+- Python
+- A* Algorithm
+- Q-Learning (Reinforcement Learning)
+- Tkinter (for GUI)
+
+---
+
+## 💡 Developed at
+
+**DoseHack** Hackathon – Team: *The_Outliers*
+
+---
+
+## 📂 Repository Structure
+
+```bash
+├── Movement_single.ipynb         # A* for single bot
+├── dual_bots.ipynb               # A* for dual bots with collision handling
+├── gui_dual.ipynb                # GUI visualization for dual bots
+├── q_learning_bot.ipynb          # Q-Learning for multi-bots (dynamic)
+├── q_learning.ipynb              # Final Q-Learning optimized solution
+├── README.md                     # Project documentation
+```
+
+---
+
+## ✨ Contributors
+
+- [Dhruvil Joshi](https://github.com/Dhruvil-Joshi)
+- [Prachi Desai](https://github.com/Prachidesai2506)
+---
