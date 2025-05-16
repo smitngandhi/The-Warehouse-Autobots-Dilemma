@@ -72,18 +72,6 @@ This notebook contains our **final implementation** of the Q-Learning approach w
 
 **DoseHack** Hackathon – Team: *The_Outliers*
 
----
-
-## 📂 Repository Structure
-
-```bash
-├── Movement_single.ipynb         # A* for single bot
-├── dual_bots.ipynb               # A* for dual bots with collision handling
-├── gui_dual.ipynb                # GUI visualization for dual bots
-├── q_learning_bot.ipynb          # Q-Learning for multi-bots (dynamic)
-├── q_learning.ipynb              # Final Q-Learning optimized solution
-├── README.md                     # Project documentation
-```
 
 ---
 
